@@ -35,8 +35,8 @@ int main(void){
     std::string ex("abc def abc ff"); 
     // std::cout << ex.find("g") << std::endl; // 문자열의 처음부터 매개변수로 들어온 문자열을 검색하여 발견한 처음 인덱스를 리턴 없으면 (-1 -> std::string::npos)
     // std::cout << ex.find("f", 7) << std::endl; // 문자열의 부터 매개변수로 들어온 문자열을 검색하여 발견한 처음 인덱스를 리턴 없으면 (-1 -> std::string::npos)
-    // std::cout << ex.rfind("def", 8) << std::endl;
+    std::cout << ex.rfind("def", 4) << std::endl;
     // std::cout << std::string::npos << std::endl;
-    std::cout << str.data() << std::endl;  // data와 c_str 함수 모두 
-    std::cout << str.c_str() << std::endl;
+    // std::cout << str.data() << std::endl;  // data와 c_str 함수 모두 
+    // std::cout << str.c_str() << std::endl;
 }

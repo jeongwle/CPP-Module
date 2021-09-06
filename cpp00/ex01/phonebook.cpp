@@ -6,7 +6,7 @@
 /*   By: jeongwle <jeongwle@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/16 18:40:14 by jeongwle          #+#    #+#             */
-/*   Updated: 2021/08/05 21:23:20 by jeongwle         ###   ########.fr       */
+/*   Updated: 2021/08/13 16:56:53 by jeongwle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -93,14 +93,21 @@ void    phonebook::search(phonebook *book, int count){
         if (index.length() == 1)
         {
             c = index.c_str();
-            num = *c - '0';
-            if (1 <= num && num <= count)
+            if ('1' <= *c && *c <= '9')
             {
-                std::cout << "first name : " << book[num - 1].first << std::endl;
-                std::cout << "last name : " << book[num - 1].last << std::endl;
-                std::cout << "nick name : " << book[num - 1].nick << std::endl;
-                std::cout << "phone number : " << book[num - 1].phone << std::endl;
-                std::cout << "darkest secret : " << book[num - 1].secret << std::endl;
+                num = *c - '0';
+                if (1 <= num && num <= count)
+                {
+                    std::cout << "first name : " << book[num - 1].first << std::endl;
+                    std::cout << "last name : " << book[num - 1].last << std::endl;
+                    std::cout << "nick name : " << book[num - 1].nick << std::endl;
+                    std::cout << "phone number : " << book[num - 1].phone << std::endl;
+                    std::cout << "darkest secret : " << book[num - 1].secret << std::endl;
+                }
+                else
+                {
+                    std::cout << "wrong input go back to the beginning" << std::endl;
+                }
             }
             else
             {

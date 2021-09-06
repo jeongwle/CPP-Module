@@ -75,6 +75,9 @@
         "ratio": "cpp",
         "semaphore": "cpp",
         "thread": "cpp",
-        "stop_token": "cpp"
+        "stop_token": "cpp",
+        "codecvt": "cpp",
+        "fstream": "cpp",
+        "stack": "cpp"
     }
 }

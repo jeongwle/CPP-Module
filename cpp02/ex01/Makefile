@@ -5,12 +5,12 @@
 #                                                     +:+ +:+         +:+      #
 #    By: jeongwle <jeongwle@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2021/09/06 13:04:51 by jeongwle          #+#    #+#              #
-#    Updated: 2021/09/06 15:42:13 by jeongwle         ###   ########.fr        #
+#    Created: 2021/09/06 15:42:38 by jeongwle          #+#    #+#              #
+#    Updated: 2021/09/09 15:59:50 by jeongwle         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME	= Fixed
+NAME	= a.out
 SRCS	= ./main.cpp \
 		  ./Fixed.cpp
 

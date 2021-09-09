@@ -6,7 +6,7 @@
 /*   By: jeongwle <jeongwle@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/09 15:56:16 by jeongwle          #+#    #+#             */
-/*   Updated: 2021/09/09 15:56:43 by jeongwle         ###   ########.fr       */
+/*   Updated: 2021/09/09 19:17:13 by jeongwle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,12 +42,6 @@ Fixed::Fixed(const float param){
         lshift *= 2;
     }
     _pointValue = roundf(param * lshift);
-    // float rshift = (float)1;
-    // for (int i = 0; i < _fractionalBit; i++){
-    //     rshift /= (float)2;
-    // }
-    // _pointValue = (float)_pointValue * rshift; 
-    // std::cout << _pointValue << std::endl;
 }
 
 Fixed& Fixed::operator=(const Fixed& fixed){

@@ -1,5 +1,6 @@
 #include <iostream>     // std::cout, std::hex, std::endl
 #include <iomanip> 
+#include <string>
 
 int main () {
     // std::cout << std::setw(10);
@@ -18,10 +19,13 @@ int main () {
     // std::cout << copy << std::endl;
     // int i = 0;
     // std::cout << i + 1 << std::endl;
-    std::string str("8");
-    std::cout << str << std::endl;
-    const char *c;
-    c = str.c_str();
-    int a = *c - '0';
-    std::cout << a << std::endl;
+    // std::string str("8");
+    // std::cout << str << std::endl;
+    // const char *c;
+    // c = str.c_str();
+    // int a = *c - '0';
+    // std::cout << a << std::endl;
+    std::string str("hi bye hello");
+    std::string str1(str.c_str(), 9);
+    std::cout << str1 << std::endl;
 }

@@ -5,15 +5,17 @@
 #                                                     +:+ +:+         +:+      #
 #    By: jeongwle <jeongwle@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2021/09/12 21:50:57 by jeongwle          #+#    #+#              #
-#    Updated: 2021/09/15 15:16:32 by jeongwle         ###   ########.fr        #
+#    Created: 2021/09/15 17:12:29 by jeongwle          #+#    #+#              #
+#    Updated: 2021/09/16 14:41:21 by jeongwle         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME	= a.out
 SRCS	= ./main.cpp \
 		  ./ClapTrap.cpp \
-		  ./ScavTrap.cpp
+		  ./ScavTrap.cpp \
+		  ./FragTrap.cpp \
+		  ./DiamondTrap.cpp
 
 
 OBJS	= $(SRCS:.cpp=.o)
@@ -22,10 +24,10 @@ CC		= clang++
 CFLAGS	= -Wall -Wextra -Werror
 
 .cpp.o :
-	$(CC) $(CFLAGS) -c $< -o $@
+	$(CC) $(CFLAGS) -Wshadow -c $< -o $@
 
 $(NAME) : $(OBJS)
-	$(CC) $(CFLAGS) -o $@ $^
+	$(CC) $(CFLAGS) -Wshadow -o $@ $^
 
 all : $(NAME)
 

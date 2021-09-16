@@ -6,7 +6,7 @@
 /*   By: jeongwle <jeongwle@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/12 21:50:51 by jeongwle          #+#    #+#             */
-/*   Updated: 2021/09/12 21:56:54 by jeongwle         ###   ########.fr       */
+/*   Updated: 2021/09/16 18:52:55 by jeongwle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,13 +16,13 @@
 # include <string>
 
 class ClapTrap{
-private:
+protected:
     std::string     _Name;
     unsigned int    _HitPoints;
     unsigned int    _EnergyPoints;
     unsigned int    _AttackDamage;
-public:
     ClapTrap();
+public:
     ClapTrap(const std::string name);
     ClapTrap(const ClapTrap& copy);
     ~ClapTrap();
@@ -32,9 +32,9 @@ public:
     void    beRepaired(unsigned int amount);
     std::string getName() const;
     unsigned int    getHitPoints() const;
+    unsigned int    getEnergyPoints() const;
     unsigned int    getAttackDamage() const;
     void    setAttackDamage(unsigned int amount);
-    void    setName(std::string name);
 };
 
 #endif

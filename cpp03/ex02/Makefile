@@ -5,15 +5,16 @@
 #                                                     +:+ +:+         +:+      #
 #    By: jeongwle <jeongwle@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2021/09/12 21:50:57 by jeongwle          #+#    #+#              #
-#    Updated: 2021/09/15 15:16:32 by jeongwle         ###   ########.fr        #
+#    Created: 2021/09/15 15:20:29 by jeongwle          #+#    #+#              #
+#    Updated: 2021/09/15 16:15:55 by jeongwle         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME	= a.out
 SRCS	= ./main.cpp \
 		  ./ClapTrap.cpp \
-		  ./ScavTrap.cpp
+		  ./ScavTrap.cpp \
+		  ./FragTrap.cpp
 
 
 OBJS	= $(SRCS:.cpp=.o)

@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: jeongwle <jeongwle@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/09/12 18:18:37 by jeongwle          #+#    #+#             */
-/*   Updated: 2021/09/16 18:52:06 by jeongwle         ###   ########.fr       */
+/*   Created: 2021/09/15 15:20:21 by jeongwle          #+#    #+#             */
+/*   Updated: 2021/09/16 19:09:21 by jeongwle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 # include <string>
 
 class ClapTrap{
-private:
+protected:
     std::string     _Name;
     unsigned int    _HitPoints;
     unsigned int    _EnergyPoints;

@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: jeongwle <jeongwle@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/09/12 21:50:43 by jeongwle          #+#    #+#             */
-/*   Updated: 2021/09/16 18:53:05 by jeongwle         ###   ########.fr       */
+/*   Created: 2021/09/15 17:11:46 by jeongwle          #+#    #+#             */
+/*   Updated: 2021/09/16 17:54:50 by jeongwle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -78,4 +78,8 @@ unsigned int    ClapTrap::getAttackDamage() const{
 
 void    ClapTrap::setAttackDamage(unsigned int amount){
     this->_AttackDamage = amount;
+}
+
+void    ClapTrap::setName(std::string name){
+    this->_Name = name;
 }

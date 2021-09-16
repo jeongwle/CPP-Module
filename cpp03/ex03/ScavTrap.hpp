@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: jeongwle <jeongwle@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/09/12 21:54:05 by jeongwle          #+#    #+#             */
-/*   Updated: 2021/09/16 19:01:15 by jeongwle         ###   ########.fr       */
+/*   Created: 2021/09/15 17:12:44 by jeongwle          #+#    #+#             */
+/*   Updated: 2021/09/16 19:01:04 by jeongwle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,10 @@
 # define SCAVTRAP_HPP
 # include "ClapTrap.hpp"
 
-class ScavTrap : public ClapTrap{
-public:
+class ScavTrap : virtual public ClapTrap{
+protected:
     ScavTrap();
+public:
     ScavTrap(const std::string name);
     ScavTrap(const ScavTrap& copy);
     ~ScavTrap();

@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: jeongwle <jeongwle@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/09/12 21:53:57 by jeongwle          #+#    #+#             */
-/*   Updated: 2021/09/16 13:17:30 by jeongwle         ###   ########.fr       */
+/*   Created: 2021/09/15 17:12:40 by jeongwle          #+#    #+#             */
+/*   Updated: 2021/09/16 18:24:25 by jeongwle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,8 +44,8 @@ ScavTrap&   ScavTrap::operator=(const ScavTrap& trap){
 }
 
 void    ScavTrap::attack(std::string const& target){
-    std::cout << "ScavTrap <" << _Name << "> attacks" << " <" << target << ">, causing ";
-    std::cout << "<" << _AttackDamage << "> points of damage!" << std::endl;
+    std::cout << "ScavTrap <" << this->_Name << "> attacks" << " <" << target << ">, causing ";
+    std::cout << "<" << this->_AttackDamage << "> points of damage!" << std::endl;
 }
 
 void ScavTrap::guardGate(){

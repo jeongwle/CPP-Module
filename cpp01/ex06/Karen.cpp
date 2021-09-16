@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Karen.cpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jeongwle <jeongwle@42.fr>                  +#+  +:+       +#+        */
+/*   By: jeongwle <jeongwle@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/06 12:06:09 by jeongwle          #+#    #+#             */
-/*   Updated: 2021/09/06 12:06:10 by jeongwle         ###   ########.fr       */
+/*   Updated: 2021/09/16 20:44:41 by jeongwle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -94,12 +94,8 @@ void    Karen::filter(std::string level){
 
 int Karen::check(std::string level){
     int i = 0;
-    while (_level[i] != level){
+    while (_level[i] != level && i < 4){
         i++;
-        if (i == 4)
-        {
-            break;
-        }
     }
     return (i);
 }

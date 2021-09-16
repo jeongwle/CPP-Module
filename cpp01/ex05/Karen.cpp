@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Karen.cpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jeongwle <jeongwle@42.fr>                  +#+  +:+       +#+        */
+/*   By: jeongwle <jeongwle@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/06 12:05:15 by jeongwle          #+#    #+#             */
-/*   Updated: 2021/09/06 12:05:16 by jeongwle         ###   ########.fr       */
+/*   Updated: 2021/09/16 20:40:55 by jeongwle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,12 +45,8 @@ void    Karen::error(){
 
 void    Karen::complain(std::string level){
     int i = 0;
-    while (_level[i] != level){
+    while (_level[i] != level && i < 4){
         i++;
-        if (i == 4)
-        {
-            break ;
-        }
     }
     if (i != 4)
     {

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Replace.cpp                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jeongwle <jeongwle@42.fr>                  +#+  +:+       +#+        */
+/*   By: jeongwle <jeongwle@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/06 12:04:57 by jeongwle          #+#    #+#             */
-/*   Updated: 2021/09/06 12:05:00 by jeongwle         ###   ########.fr       */
+/*   Updated: 2021/09/16 20:31:37 by jeongwle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,7 +42,7 @@ int    Replace::ft_replace(){
                 fout << line[i];
             }
             fout << _after;
-            line.erase(0, line.find(_before) + 1);
+            line.erase(0, line.find(_before) + _before.length());
         }
         fout << line << std::endl;
     }

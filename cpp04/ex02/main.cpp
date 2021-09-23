@@ -6,7 +6,7 @@
 /*   By: jeongwle <jeongwle@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/22 17:50:31 by jeongwle          #+#    #+#             */
-/*   Updated: 2021/09/23 12:52:44 by jeongwle         ###   ########.fr       */
+/*   Updated: 2021/09/23 13:01:57 by jeongwle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,13 +15,7 @@
 #include "Brain.hpp"
 
 int main(void){
-    // std::cout << "--------------subject main--------------" << std::endl;
-    // const Animal *j = new Dog();
-    // const Animal *i = new Cat();
-    // delete j;
-    // delete i;
-    // while (1)
-    //     ;
+    // Animal a;
     const Animal *Animal[10];
     std::cout << "--------------constructor--------------" << std::endl;
     for (int i = 0; i < 5; i++){
@@ -70,7 +64,5 @@ int main(void){
     std::cout << "dog2 idea = " << dog2.getIdea(20) << std::endl;
     std::cout << "--------------------------------------" << std::endl << std::endl;
     std::cout << "--------------destructor--------------" << std::endl;
-    // while (1)
-        // ;
     return (0);
 }

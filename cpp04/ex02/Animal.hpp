@@ -6,7 +6,7 @@
 /*   By: jeongwle <jeongwle@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/20 16:00:01 by jeongwle          #+#    #+#             */
-/*   Updated: 2021/09/22 18:50:23 by jeongwle         ###   ########.fr       */
+/*   Updated: 2021/09/23 12:59:59 by jeongwle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,8 +25,8 @@ public :
     Animal& operator=(const Animal& animal);
     std::string getType() const;
     virtual void    makeSound() const;
-    virtual std::string getIdea(int num) const;
-    virtual void    setIdea(int num, std::string idea);
+    virtual std::string getIdea(int num) const = 0;
+    virtual void    setIdea(int num, std::string idea) = 0;
 };
 
 

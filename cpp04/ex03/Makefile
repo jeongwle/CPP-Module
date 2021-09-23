@@ -3,19 +3,16 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: jeongwle <jeongwle@student.42.fr>          +#+  +:+       +#+         #
+#    By: jeongwle <jeongwle@student.42.kr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2021/09/22 18:49:48 by jeongwle          #+#    #+#              #
-#    Updated: 2021/09/22 18:50:20 by jeongwle         ###   ########.fr        #
+#    Created: 2021/09/23 14:49:52 by jeongwle          #+#    #+#              #
+#    Updated: 2021/09/23 14:49:54 by jeongwle         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME	= a.out
 SRCS	= ./main.cpp \
-		  ./Animal.cpp \
-		  ./Dog.cpp \
-		  ./Cat.cpp \
-		  ./Brain.cpp 
+		#   ./Animal.cpp
 		  
 OBJS	= $(SRCS:.cpp=.o)
 RM		= rm -f

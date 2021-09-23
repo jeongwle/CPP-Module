@@ -1,31 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Dog.hpp                                            :+:      :+:    :+:   */
+/*   Character.hpp                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jeongwle <jeongwle@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/09/20 16:43:50 by jeongwle          #+#    #+#             */
-/*   Updated: 2021/09/22 18:48:43 by jeongwle         ###   ########.fr       */
+/*   Created: 2021/09/23 20:41:52 by jeongwle          #+#    #+#             */
+/*   Updated: 2021/09/23 21:10:16 by jeongwle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef DOG_HPP
-# define DOG_HPP
-# include "Animal.hpp"
-# include "Brain.hpp"
+#ifndef CHARACTER_HPP
+# define CHARACTER_HPP
+# include "ICharacter.hpp"
 
-class Dog : public Animal{
-private :
-    Brain *_Brain;
-public :
-    Dog();
-    virtual ~Dog();
-    Dog(const Dog& copy);
-    Dog&    operator=(const Dog& dog);
-    virtual void    makeSound() const;
-    virtual std::string getIdea(int num) const;
-    virtual void    setIdea(int num, std::string idea);
+class Character : public ICharacter{
+private:
+    std::string _Name;
+    AMateria    *_Materia[4];
+public:
 };
 
 #endif

@@ -6,7 +6,7 @@
 /*   By: jeongwle <jeongwle@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/20 15:59:56 by jeongwle          #+#    #+#             */
-/*   Updated: 2021/09/22 18:59:49 by jeongwle         ###   ########.fr       */
+/*   Updated: 2021/09/23 14:09:06 by jeongwle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,14 +37,4 @@ std::string    Animal::getType() const{
 
 void    Animal::makeSound() const{
     std::cout << "Animal make sound. animal! animal!" << std::endl;
-}
-
-std::string Animal::getIdea(int num) const{
-    (void)num;
-    return 0;
-}
-
-void    Animal::setIdea(int num, std::string idea){
-    (void)idea;
-    (void)num;
 }

@@ -6,7 +6,7 @@
 /*   By: jeongwle <jeongwle@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/30 20:20:30 by jeongwle          #+#    #+#             */
-/*   Updated: 2021/09/30 21:09:18 by jeongwle         ###   ########.fr       */
+/*   Updated: 2021/10/02 00:24:09 by jeongwle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,8 @@
 class PresidentialPardonForm : public Form{
 private :
     std::string _Target;
-public :
     PresidentialPardonForm();
+public :
     PresidentialPardonForm(const std::string target);
     virtual ~PresidentialPardonForm();
     PresidentialPardonForm(const PresidentialPardonForm& copy);

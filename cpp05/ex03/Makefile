@@ -5,8 +5,8 @@
 #                                                     +:+ +:+         +:+      #
 #    By: jeongwle <jeongwle@student.42.kr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2021/10/01 20:07:40 by jeongwle          #+#    #+#              #
-#    Updated: 2021/10/01 20:07:43 by jeongwle         ###   ########.fr        #
+#    Created: 2021/10/01 20:58:18 by jeongwle          #+#    #+#              #
+#    Updated: 2021/10/01 20:58:33 by jeongwle         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,7 +16,8 @@ SRCS	= ./main.cpp \
 		  ./Form.cpp \
 		  ./ShrubberyCreationForm.cpp \
 		  ./RobotomyRequestForm.cpp \
-		  ./PresidentialPardonForm.cpp
+		  ./PresidentialPardonForm.cpp \
+		  ./Intern.cpp
 		  
 OBJS	= $(SRCS:.cpp=.o)
 RM		= rm -f

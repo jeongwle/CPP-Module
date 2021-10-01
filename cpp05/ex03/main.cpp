@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: jeongwle <jeongwle@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/10/01 20:05:27 by jeongwle          #+#    #+#             */
-/*   Updated: 2021/10/01 20:06:55 by jeongwle         ###   ########.fr       */
+/*   Created: 2021/10/01 20:58:38 by jeongwle          #+#    #+#             */
+/*   Updated: 2021/10/02 00:17:42 by jeongwle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 #include "ShrubberyCreationForm.hpp"
 #include "RobotomyRequestForm.hpp"
 #include "PresidentialPardonForm.hpp"
+#include "Intern.hpp"
 
 void test(Bureaucrat& b, Form* f){
     std::cout << "------------test case --------------" << std::endl;
@@ -46,19 +47,24 @@ void test(Bureaucrat& b, Form* f){
 }
 
 int main(void){
+    Intern someRandomIntern;
+    Form* s;
+    Form* r;
+    Form* p;
+    Form* nothing;
     Bureaucrat jeongwle("jeongwle", 1);
     Bureaucrat junghwki("junghwki", 25);
     Bureaucrat mki("mki", 72);
     Bureaucrat ukwon("ukwon", 145);
-    
-    Form *s = new ShrubberyCreationForm("juyang");
-    Form *r = new RobotomyRequestForm("juyang");
-    Form *p = new PresidentialPardonForm("juyang");
 
+    s = someRandomIntern.makeForm("ShrubberyCreation", "juyang");
+    r = someRandomIntern.makeForm("RobotomyRequest", "juyang1");
+    p = someRandomIntern.makeForm("PresidentialPardon", "juyang2");
+    nothing = someRandomIntern.makeForm("nothing", "sehan");
+    std::cout << std::endl << std::endl;
     std::cout << *s;
     std::cout << *r;
     std::cout << *p;
-    std::cout << std::endl;
     test(ukwon, s);
     test(ukwon, r);
     test(ukwon, p);
@@ -69,6 +75,5 @@ int main(void){
     delete p;
     delete r;
     delete s;
-
     return (0);
 }

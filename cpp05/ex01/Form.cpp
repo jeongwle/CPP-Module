@@ -6,7 +6,7 @@
 /*   By: jeongwle <jeongwle@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/29 10:45:49 by jeongwle          #+#    #+#             */
-/*   Updated: 2021/09/30 21:40:03 by jeongwle         ###   ########.fr       */
+/*   Updated: 2021/10/02 00:14:10 by jeongwle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,7 +72,7 @@ std::ostream& operator<<(std::ostream& os, const Form& form){
     os << "Form name : " << form.getName() << std::endl;
     os << "Form grade required to sign : " << form.getSignGrade() << std::endl;
     os << "Form grade required to execute : " << form.getExecuteGrade() << std::endl;
-    os << "Form state where it is signed : " << form.getSignOrNot() << std::endl;
+    os << "Form status where it is signed : " << form.getSignOrNot() << std::endl;
     os << "------------------------------------" << std::endl;
     return os;
 }

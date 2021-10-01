@@ -6,7 +6,7 @@
 /*   By: jeongwle <jeongwle@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/15 17:12:03 by jeongwle          #+#    #+#             */
-/*   Updated: 2021/09/16 18:44:55 by jeongwle         ###   ########.fr       */
+/*   Updated: 2021/10/02 00:38:07 by jeongwle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,7 +43,6 @@ DiamondTrap::DiamondTrap(const DiamondTrap& copy){
 
 DiamondTrap&    DiamondTrap::operator=(const DiamondTrap& trap){
     std::cout << "DiamondTrap assignation operator called" << std::endl;
-    // ClapTrap::_Name = trap._Name + "_clap_name";
     ClapTrap::operator=(trap);
     this->_Name = trap._Name;
     return *(this);

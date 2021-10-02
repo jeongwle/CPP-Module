@@ -6,7 +6,7 @@
 /*   By: jeongwle <jeongwle@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/27 21:22:52 by jeongwle          #+#    #+#             */
-/*   Updated: 2021/09/28 11:45:31 by jeongwle         ###   ########.fr       */
+/*   Updated: 2021/10/02 17:33:38 by jeongwle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,8 +29,8 @@ int main(void){
         std::cout << "------------------------------------" << std::endl;
     }
     catch (std::exception& e){
-    std::cerr << e.what() << std::endl;
-    std::cout << "------------------------------------" << std::endl << std::endl;
+        std::cerr << e.what() << std::endl;
+        std::cout << "------------------------------------" << std::endl << std::endl;
     }
     std::cout << "------------------------------------" << std::endl << std::endl;
     std::cout << std::endl << std::endl << std::endl;

@@ -6,7 +6,7 @@
 /*   By: jeongwle <jeongwle@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/26 16:37:09 by jeongwle          #+#    #+#             */
-/*   Updated: 2021/09/26 21:42:05 by jeongwle         ###   ########.fr       */
+/*   Updated: 2021/10/02 15:10:28 by jeongwle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -128,6 +128,7 @@ int main(void){
     me->equip(tmp2);
     std::cout << "----------- Wrong input -----------" << std::endl;
     AMateria *tmp3 = src->createMateria("jeongwle");
+    me->equip(tmp3);
     showCharacterMateria(me);
     std::cout << "return value : " << tmp3 << std::endl;
     std::cout << "-----------------------------------" << std::endl << std::endl;

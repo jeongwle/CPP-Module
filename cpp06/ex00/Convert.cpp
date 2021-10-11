@@ -6,7 +6,7 @@
 /*   By: jeongwle <jeongwle@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/06 18:01:23 by jeongwle          #+#    #+#             */
-/*   Updated: 2021/10/07 20:05:19 by jeongwle         ###   ########.fr       */
+/*   Updated: 2021/10/11 20:39:48 by jeongwle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -105,7 +105,8 @@ bool Convert::isFloat(std::string argv){
         }
         return true;
     }
-    if (argv[argv.length() - 1] != 'f'){
+    if (argv[argv.length() - 1] != 'f' ||
+        argv.find("f") != argv.rfind("f")){
         return false;
     }
     else{
@@ -113,6 +114,8 @@ bool Convert::isFloat(std::string argv){
     }
     if (argv.find(".") == std::string::npos ||
         argv.find(".") != argv.rfind(".") ||
+        !isdigit(argv[argv.find(".") + 1]) ||
+        argv.find(".") == argv.length() - 1 ||
         argv.find(".") == 0){
             return false;
         }
@@ -151,6 +154,7 @@ bool Convert::isDouble(std::string argv){
         }
     }
     if (argv.find(".") != argv.rfind(".") ||
+        argv.find(".") == argv.length() - 1 ||
         argv.find(".") == 0){
             return false;
         }

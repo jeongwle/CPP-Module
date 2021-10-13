@@ -5,14 +5,13 @@
 #                                                     +:+ +:+         +:+      #
 #    By: jeongwle <jeongwle@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2021/10/12 20:54:03 by jeongwle          #+#    #+#              #
-#    Updated: 2021/10/12 21:40:27 by jeongwle         ###   ########.fr        #
+#    Created: 2021/10/13 21:04:41 by jeongwle          #+#    #+#              #
+#    Updated: 2021/10/13 21:08:07 by jeongwle         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME	= a.out
 SRCS	= ./main.cpp
-		  ./
 		  
 OBJS	= $(SRCS:.cpp=.o)
 RM		= rm -f

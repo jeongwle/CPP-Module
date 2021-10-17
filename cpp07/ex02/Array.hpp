@@ -6,7 +6,7 @@
 /*   By: jeongwle <jeongwle@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/15 21:44:38 by jeongwle          #+#    #+#             */
-/*   Updated: 2021/10/16 12:33:54 by jeongwle         ###   ########.fr       */
+/*   Updated: 2021/10/17 15:57:00 by jeongwle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,8 +42,8 @@ public :
             return "Exception : Index is out of range.";
         }
     };
-    T& operator[](int idx){
-        if (idx < 0 || idx >= static_cast<int>(this->_n)){
+    T& operator[](unsigned int idx){
+        if (idx >= this->_n){
             throw IndexOutOfRange();
         }
         return this->_arr[idx];

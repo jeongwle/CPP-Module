@@ -6,12 +6,11 @@
 /*   By: jeongwle <jeongwle@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/13 21:04:58 by jeongwle          #+#    #+#             */
-/*   Updated: 2021/10/13 21:43:01 by jeongwle         ###   ########.fr       */
+/*   Updated: 2021/10/17 16:03:40 by jeongwle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "iter.hpp"
-#include <cstdio>
 
 template <typename T>
 void showArrayElement(T param){

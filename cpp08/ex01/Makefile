@@ -6,12 +6,12 @@
 #    By: jeongwle <jeongwle@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/10/23 19:55:11 by jeongwle          #+#    #+#              #
-#    Updated: 2021/10/23 19:56:15 by jeongwle         ###   ########.fr        #
+#    Updated: 2021/10/24 19:39:32 by jeongwle         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME	= a.out
-SRCS	= ./main.cpp
+SRCS	= ./main.cpp \
 		  ./span.cpp
 		  
 OBJS	= $(SRCS:.cpp=.o)

@@ -6,7 +6,7 @@
 /*   By: jeongwle <jeongwle@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/12 21:03:06 by jeongwle          #+#    #+#             */
-/*   Updated: 2021/10/17 13:45:39 by jeongwle         ###   ########.fr       */
+/*   Updated: 2021/10/25 13:53:17 by jeongwle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,6 +53,8 @@ int main(void){
     std::cout << "max(g, h) = " << ::max(g, h) << std::endl;
     std::cout << "max(i, j) = " << ::max(i, j) << std::endl;
     std::cout << "--------------------------" << std::endl;
+
+    std::cout << ::max(2, 2) << std::endl;
     
     return 0;
 }

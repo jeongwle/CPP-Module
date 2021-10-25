@@ -6,7 +6,7 @@
 /*   By: jeongwle <jeongwle@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/15 21:44:45 by jeongwle          #+#    #+#             */
-/*   Updated: 2021/10/17 15:57:23 by jeongwle         ###   ########.fr       */
+/*   Updated: 2021/10/25 14:06:52 by jeongwle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,10 +24,10 @@ int main(int, char**)
         const int value = rand();
         numbers[i] = value;
         mirror[i] = value;
-        std::cout << "---------------" << std::endl;
-        std::cout << numbers[i] << std::endl;
-        std::cout << mirror[i] << std::endl;
-        std::cout << "---------------" << std::endl;
+        // std::cout << "---------------" << std::endl;
+        // std::cout << numbers[i] << std::endl;
+        // std::cout << mirror[i] << std::endl;
+        // std::cout << "---------------" << std::endl;
     }
     //SCOPE
     {

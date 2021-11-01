@@ -6,7 +6,7 @@
 /*   By: jeongwle <jeongwle@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/15 21:44:45 by jeongwle          #+#    #+#             */
-/*   Updated: 2021/10/25 14:06:52 by jeongwle         ###   ########.fr       */
+/*   Updated: 2021/10/30 15:30:38 by jeongwle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,13 +33,13 @@ int main(int, char**)
     {
         Array<int> tmp = numbers;
         Array<int> test(tmp);
-        // for (int i = 0; i < 10; i++){
-        //     std::cout << "---------------" << std::endl;
-        //     std::cout << numbers[i] << std::endl;
-        //     std::cout << tmp[i] << std::endl;
-        //     std::cout << test[i] << std::endl;
-        //     std::cout << "---------------" << std::endl;
-        // }
+        for (int i = 0; i < 10; i++){
+            // std::cout << "---------------" << std::endl;
+            // std::cout << numbers[i] << std::endl;
+            // std::cout << tmp[i] << std::endl;
+            // std::cout << test[i] << std::endl;
+            // std::cout << "---------------" << std::endl;
+        }
     }
     std::cout << "------save same value------" << std::endl;
     for (int i = 0; i < MAX_VAL; i++)
@@ -75,6 +75,8 @@ int main(int, char**)
         numbers[i] = rand();
     }
     std::cout << "numbers size : " << numbers.size() << std::endl;
+    Array<int> a;
+
     delete [] mirror;//
     return 0;
 }

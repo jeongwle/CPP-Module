@@ -6,7 +6,7 @@
 /*   By: jeongwle <jeongwle@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/23 14:43:20 by jeongwle          #+#    #+#             */
-/*   Updated: 2021/10/23 20:34:48 by jeongwle         ###   ########.fr       */
+/*   Updated: 2021/12/01 13:00:46 by jeongwle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,8 +25,7 @@ class CannotFindException : public std::exception{
 template <typename T>
 typename T::iterator easyfind(T& container , int whatever){
     std::cout << "default iterator" << std::endl;
-    typename T::iterator iter;
-    iter = std::find(container.begin(), container.end(), whatever);
+    typename T::iterator iter = std::find(container.begin(), container.end(), whatever);
     if (iter == container.end()){
         throw CannotFindException();
     }
